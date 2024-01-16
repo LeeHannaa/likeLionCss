@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "HankenGroteskBold";
+  src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HankenGroteskExtraBold";
+  src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "HankenGroteskMedium";
+  src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+}
+#paper {
+  display: flex;
+  justify-content: center; /* 세로로 가운데 정렬*/
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center; /* 가로로 가운데 정렬*/
+}
+#smallbox1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* 컴포넌트 세로 정렬*/
+  /* background-color: rgb(71, 71, 191); */
+  background-image: linear-gradient(
+    rgb(105, 62, 246),
+    rgb(22, 22, 237)
+  ); /*그라데이션*/
+  border-radius: 20px;
+}
+p {
+  font-family: "HankenGrotesk-Bold";
+  color: gray;
+}
+#result {
+  color: rgb(215, 215, 215);
+  font-family: "HankenGroteskMedium";
+  font-size: 27px;
+}
+#circle {
+  display: flex;
+  align-items: center; /*세로 가운데 정렬*/
+  justify-content: center; /*가로 가운데 정렬*/
+  flex-direction: column; /*div 내 컴포넌트 세로 정렬*/
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* background-color: rgb(61, 61, 168); */
+  background-image: linear-gradient(rgb(59, 59, 183), rgb(51, 51, 235));
+}
+#number {
+  color: white;
+  font-family: "HankenGroteskBold";
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+#numberoftotal {
+  margin-top: 0;
+  color: rgb(192, 191, 191);
+}
+#great {
+  color: white;
+  font-family: "HankenGroteskMedium";
+  font-size: 30px;
+  margin-bottom: 0;
+}
+span {
+  font-weight: 800;
+  color: rgb(31, 31, 31);
+}
+#summary {
+  margin-top: 0;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+  color: rgb(10, 12, 44);
+  font-family: "HankenGroteskMedium";
+  font-size: 28px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  align-items: center;
+}
+#redbox {
+  width: 300px;
+  background-color: rgb(255, 221, 221, 0.4);
+  border-radius: 15px;
+  margin-bottom: 13px;
+}
+#redbox img {
+  width: 27px;
+  height: 25px;
+  margin-left: 15px;
+}
+#redbox #color {
+  color: rgb(255, 82, 82);
+  font-weight: bold;
+}
+#yellowbox {
+  width: 300px;
+  background-color: rgb(255, 253, 209, 0.4);
+  border-radius: 15px;
+  margin-bottom: 13px;
+}
+#yellowbox img {
+  width: 27px;
+  height: 25px;
+  margin-left: 15px;
+}
+#yellowbox #color {
+  color: #ffb21e;
+  font-weight: bold;
+}
+#greenbox {
+  width: 300px;
+  background-color: rgba(201, 252, 243, 0.4);
+  border-radius: 15px;
+  margin-bottom: 13px;
+}
+#greenbox img {
+  width: 27px;
+  height: 25px;
+  margin-left: 15px;
+}
+#greenbox #color {
+  color: #00bb8f;
+  font-weight: bold;
+}
+#purplebox {
+  width: 300px;
+  background-color: rgba(196, 200, 254, 0.4);
+  border-radius: 15px;
+  margin-bottom: 13px;
+}
+#purplebox img {
+  width: 27px;
+  height: 25px;
+  margin-left: 15px;
+}
+#purplebox #color {
+  color: rgb(29, 43, 192);
+  font-weight: bold;
+}
+button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: rgb(25, 28, 80);
+}
+@media (max-width: 850px) {
+  #biggrid {
+    display: grid;
+    width: 350px;
+    border-radius: 20px;
+    padding-top: 20px;
+  }
+  #text {
+    color: rgb(215, 215, 215);
+    font-family: "HankenGrotesk";
+    text-align: center;
+    width: 270px;
+  }
+  #smallbox2 {
+    padding-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 850px) {
+  #biggrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px rgb(235, 235, 255); /*오른쪽 아래 부드러움 확장량 색*/
+  }
+  #text {
+    color: rgb(215, 215, 215);
+    font-family: "HankenGrotesk";
+    text-align: center;
+    width: 220px;
+  }
+  #smallbox2 {
+    margin-left: 50px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+}
